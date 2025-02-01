@@ -1,0 +1,20 @@
+import React from 'react'
+import AboutMeImg from "../assets/img/About Me.png"
+
+const AboutMe = () => {
+  return (
+    <div className='grid grid-cols-2 items-center gap-10 py-20'>
+      <div><img src={AboutMeImg} alt="" className='w-[500px]'/></div>
+      <div><p>About</p>
+      <h1 className='text-[45px]'>About Me</h1>
+      <div className='flex flex-col gap-5'>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce varius faucibus massa sollicitudin amet augue. Nibh metus a semper purus mauris duis. Lorem eu neque, tristique quis duis. Nibh scelerisque ac adipiscing velit non nulla in amet pellentesque. </p>
+<p>
+Sit turpis pretium eget maecenas. Vestibulum dolor mattis consectetur eget commodo vitae. Amet pellentesque sit pulvinar lorem mi a, euismod risus r.</p>
+</div>
+      </div>
+    </div>
+  )
+}
+
+export default AboutMe

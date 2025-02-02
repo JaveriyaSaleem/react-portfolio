@@ -6,7 +6,7 @@ const Card = (props) => {
     
 
 <div className='border p-6 w-sm rounded-2xl'>
-    <div className=''>
+    <div className='flex justify-center md:justify-start'>
         <img src={props.img} alt="" />
     </div>
     <h1 className='font-bold'>{props.title}</h1>

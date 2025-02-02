@@ -6,7 +6,7 @@ const Navbar = () => {
 
   return (
     <nav className="py-6 relative">
-      <div className="px-4 flex items-center justify-between h-16">
+      <div className="px-4 flex items-center justify-between h-16 w-full">
         {/* Logo */}
         <div>
           <img src={logo} alt="Logo" className="w-[200px]" />
@@ -36,27 +36,35 @@ const Navbar = () => {
         </div>
 
         {/* Desktop Nav */}
-        <div className="hidden md:flex space-x-6">
-          <a href="#" className="hidden text-[#5e3bee] font-bold">Home</a>
-          <a href="#" className="hidden hover:text-[#5e3bee] hover:font-bold">Portfolio</a>
-          <a href="#" className="hidden hover:text-[#5e3bee] hover:font-bold">About Me</a>
-          <a href="#" className="hidden hover:text-[#5e3bee] hover:font-bold">Testimonials</a>
-          <button className="border border-[#5e3bee] text-[#5e3bee] hover:text-white hover:bg-[#5e3bee] py-2 px-3 rounded-sm">
+        <div className="hidden md:flex items-center justify-between space-x-6 w-full">
+          <div className="flex justify-center gap-10 w-5/6">
+          <a href="#" className=" text-[#5e3bee] font-bold">Home</a>
+          <a href="#" className=" hover:text-[#5e3bee] hover:font-bold">Portfolio</a>
+          <a href="#" className=" hover:text-[#5e3bee] hover:font-bold">About Me</a>
+          <a href="#" className=" hover:text-[#5e3bee] hover:font-bold">Testimonials</a>
+          </div>
+          <div className="w-1/6 text-end">
+          <button className=" border border-[#5e3bee] text-[#5e3bee] hover:text-white hover:bg-[#5e3bee] py-2 px-3 rounded-sm">
             Contact Me
           </button>
+          </div>
         </div>
       </div>
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="absolute top-16 left-0 w-full bg-white shadow-md flex flex-col items-center space-y-4 py-6 md:hidden">
+        <div className="flex justify-center pb-10 absolute top-20 left-0 w-full bg-white shadow-md space-y-10 py-6 md:hidden">
+          <div className="flex flex-col items-center gap-4">
           <a href="#" className="text-[#5e3bee] font-bold">Home</a>
           <a href="#" className="hover:text-[#5e3bee] hover:font-bold">Portfolio</a>
           <a href="#" className="hover:text-[#5e3bee] hover:font-bold">About Me</a>
           <a href="#" className="hover:text-[#5e3bee] hover:font-bold">Testimonials</a>
+          <div>
+          </div>
           <button className="border border-[#5e3bee] text-[#5e3bee] hover:text-white hover:bg-[#5e3bee] py-2 px-3 rounded-sm">
             Contact Me
           </button>
+          </div>
         </div>
       )}
     </nav>

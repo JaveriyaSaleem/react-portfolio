@@ -5,6 +5,7 @@ import AboutMe from "./Components/AboutMe"
 import MyProject from "./Components/MyProject"
 import Client from "./Components/Client"
 import Contact from "./Components/Contact"
+import Footer from "./Components/Footer"
 function App() {
 
   return (
@@ -16,6 +17,8 @@ function App() {
 <MyProject/>
 <Client/>
 <Contact/>
+<Footer/>
+
       
     </>
   )

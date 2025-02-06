@@ -55,7 +55,7 @@ const Footer = () => {
           </a>
         </div>
       </div>
-      <div className="flex flex-col md:flex-row justify-between pt-10 md:px-4">
+      <div className="flex flex-col items-center md:flex-row justify-between pt-10 md:px-4">
         <h4>Made with 💖 by Airdokan & Javeriya</h4>
         <p className="md:flex gap-10 hidden">
           {" "}
